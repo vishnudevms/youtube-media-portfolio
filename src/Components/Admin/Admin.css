@@ -1,0 +1,74 @@
+.admin-background {
+  min-height: 100vh;
+  display: flex;
+}
+
+.admin-sidebar {
+  width: 240px;
+  background: #151515;
+  color: #17cb57;
+  padding: 32px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  box-shadow: 2px 0 12px rgba(0,0,0,0.2);
+}
+
+.admin-sidebar h2 {
+  color: #17cb57;
+  margin-bottom: 40px;
+}
+
+.admin-sidebar nav ul {
+  list-style: none;
+  margin-left: -110px;
+  width: 100%;
+}
+
+.admin-sidebar nav ul li {
+  padding: 16px 32px;
+  cursor: pointer;
+}
+
+.admin-main {
+  flex: 1;
+  padding: 48px;
+  color: white;
+  background: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.admin-main h1 {
+  color: #17cb57;
+  font-weight: 700;
+  font-size: 2.5rem;
+}
+
+
+.admin-upload-episode input[type="text"],
+.admin-upload-episode input[type="url"] {
+  font-size: 1rem;
+}
+
+.episode-li-box {
+  background: #181818;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  padding: 18px 22px;
+  margin-bottom: 18px;
+  color: #fff;
+  transition: transform 0.15s;
+  border-left: 4px solid #17cb57;
+}
+.episode-li-box:hover {
+  transform: translateY(-3px) scale(1.02);
+  box-shadow: 0 6px 20px rgba(23,203,87,0.15);
+}
+.deletebtn{
+  color: #17cb57;
+  font-size: 35px;
+}

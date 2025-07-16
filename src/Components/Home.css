@@ -1,0 +1,283 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+.background{
+    /* margin-top: 1px; */
+    background-color: black;
+    height: 740px;
+}
+.alltext{
+    grid-row: 1;
+    grid-column: 1;
+    width: 550px;
+    height: 500px;
+    color: white;
+    padding-left: 100px;
+    padding-top: 140px;
+}
+.mahalia{
+    font-size: 22px;
+    border-radius: 2px 2px 2px 2px;
+    margin: 0 0 0 0;
+    color: #17cb57;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.vanished{
+    font-size: 42px;
+    border-radius: 2px 2px 2px 2px;
+    margin: 0 0 0 0;
+    color: white;
+    font-weight: 700;
+}
+.primary{
+    height: 50px;
+    width: 170px;
+    border-radius: 50px;
+    background-color: #17cb57;
+    border-color: #17cb57;
+    color: black;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 30px;
+}
+.primary:hover{
+    background-color: #17cb57;
+    color: white;
+}
+.secondary{
+    height: 50px;
+    width: 170px;
+    border-radius: 50px;
+    background-color: black;
+    border-color: #17cb57;
+    color: #17cb57;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.secondary:hover{
+    background-color: #17cb57;
+    color: black;
+}
+.newgirl{
+    width: 600px;
+    margin-left: 900px;
+    margin-top: -440px;
+    opacity: .7;
+}
+/* <----musicbar----> */
+.audiobackground{
+    background-color: #151515;
+    height: 110px;
+    margin-top: -80px;
+    position: relative;
+}
+.playbuttons{
+    display: flex;
+    padding-top: 30px;
+    gap: 10px;
+    padding-left: 65px;
+}
+.leftrotate{
+    color: #17cb57;
+    font-size: 40px;
+    padding-top: 5px;
+}
+.play{
+    color: #17cb57;
+    font-size: 48px;
+}
+.rightrotate{
+    font-size: 40px;
+    color: #17cb57;
+    padding-top: 5px;
+}
+button{
+    background: none; 
+    border: none;
+}
+.timestamp{
+    color: white;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+}
+.bothcontrol{
+    display: flex;
+}
+
+/* ---------audiocontrol--------- */
+
+.audiocontrol{
+    color: #17cb57;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+.control-bar {
+    position: absolute;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-50%) rotate(-90deg);
+    margin-left: 970px;
+    margin-top: 5px;
+    border-radius: 8px;
+    padding-top: 10px;
+    gap: 20px;
+}
+.audiocontrol:hover + .control-bar {
+    display: flex;
+}
+.control-bar:hover{
+    display: flex;
+}
+.control-bar input[type="range"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 150px;
+    height: 0px;
+    background: #ccc;
+    border-radius: 5px;
+    outline: none;
+    display: flex;
+    padding-left: 50px;
+}
+
+.control-bar input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #17cb57;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.control-bar input[type="range"]::-webkit-slider-runnable-track {
+    background: #444;
+    border-radius: 5px;
+}
+
+/* ---------forwardslider--------- */
+
+.forandback {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 150px;
+    height: 5px;
+    background: #ccc;
+    border-radius: 5px;
+    outline: none;
+    display: flex;
+    margin-top: 23px;
+    width: 900px;
+}
+
+.forandback::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 15px;
+    height: 15px;
+    background: #17cb57;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.forandback::-webkit-slider-runnable-track {
+    background: #444;
+    border-radius: 5px;
+}
+
+/* <-------latest episodes--------> */
+
+.latesteptitles{
+    background-color: black;
+    justify-items: center;
+    padding-top: 116px;
+}
+.start{
+    font-size: 24px;
+    color: #17cb57;
+    font-weight: 700;
+    font-family: "Roboto", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+.latest{
+    font-size: 50px;
+    border-radius: 2px 2px 2px 2px;
+    margin: 0 0 0 0;
+    color: white;
+    font-weight: 700;
+    margin-top: -20px;
+}
+
+/* <----------episodeflexbox----------> */
+
+.latestepflex {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: black;
+  gap: 32px;
+  justify-content: center;
+  margin-top: 32px;
+  padding-bottom: 50px;
+}
+
+.episode-card {
+  background: #181818;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.4);
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  padding: 0 0 16px 0;
+  transition: transform 0.2s;
+  height: 100%;           
+  min-height: 350px;
+}
+
+.episode-card:hover {
+  transform: translateY(-8px) scale(1.03);
+}
+
+.episode-thumb img {
+  width: 100%;
+  border-radius: 16px 16px 0 0;
+  object-fit: cover;
+  height: 200px;
+}
+
+.episode-info {
+  padding: 16px;
+  color: #fff;
+}
+
+.episode-meta {
+  font-size: 0.95em;
+  color: #aaa;
+  margin-bottom: 8px;
+}
+
+.episode-title {
+  font-size: 1.1em;
+  font-weight: bold;
+  margin: 0 0 8px 0;padding-top: 15px;
+}
+
+.latestepflex > a {
+  display: block;
+  height: 100%;
+}

@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.navbar {
+    background-color: black;
+    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+.nav-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    padding-top: 20px;
+}
+.maintitle {    
+    font-family: "Pacifico", cursive;
+    font-weight: 400;
+    font-style: normal;
+    color: white;
+    padding-left: 100px;  
+}
+.alllinks {
+    display: flex;
+    gap: 40px;
+    padding-left: 700px;
+}
+.linkStyle{
+    color: white;
+    text-decoration: none;
+}
+.linkStyle:hover{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    color: #17cb57;
+}
+.activeLinkStyle{
+    text-decoration: underline;
+    text-underline-offset: 6px;
+    color: #17cb57;
+}
+.mini-social-box {
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background: #181818;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.18);
+  padding: 18px 22px;
+  z-index: 100;
+  min-width: 180px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.mini-social-box a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.05em;
+  transition: color 0.15s;
+}
+
+.mini-social-box a:hover {
+  color: #17cb57 !important;
+}
