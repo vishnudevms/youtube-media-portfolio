@@ -61,7 +61,7 @@ let Home=()=>{
   }, []);
     useEffect(() => {
     const fetchVideoDetails = async () => {
-      const apiKey = "AIzaSyACZk1tAmmczskBiG00Q3XK9vwPu2Ynikc";
+      const apiKey = process.env.REACT_APP_YOUTUBE_API_KEY;
       const ids = episodes
         .map(ep => getYouTubeVideoId(ep.youtubeUrl))
         .filter(Boolean)
