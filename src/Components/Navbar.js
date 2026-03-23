@@ -28,8 +28,9 @@ let Navbar = () => {
         <h2 className="maintitle">Angelislive</h2>
         <div className="alllinks" style={{ position: "relative" }}>
           <NavLink to='/' className={({ isActive }) => isActive ? "linkStyle activeLinkStyle" : "linkStyle"}>Home</NavLink>
-          <NavLink to='/about' className={({ isActive }) => isActive ? "linkStyle activeLinkStyle" : "linkStyle"}>About</NavLink>
-          <NavLink to='/gallery' className={({ isActive }) => isActive ? "linkStyle activeLinkStyle" : "linkStyle"}>Gallery</NavLink>
+          {/* Temporarily disabled as requested */}
+          {/* <NavLink to='/about' className={({ isActive }) => isActive ? "linkStyle activeLinkStyle" : "linkStyle"}>About</NavLink>
+          <NavLink to='/gallery' className={({ isActive }) => isActive ? "linkStyle activeLinkStyle" : "linkStyle"}>Gallery</NavLink> */}
           <span
             className="linkStyle"
             style={{ cursor: "pointer" }}
